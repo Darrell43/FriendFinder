@@ -1,8 +1,11 @@
+
+
 // Dependencies
 // =============================================================
 var express = require("express");
 var bodyParser = require("body-parser");
 var path = require("path");
+var friendsArray = require("./data/friends.js");
 
 // create server with express
 var app = express();
@@ -23,3 +26,7 @@ require('./routing/htmlRoutes')(app);
 app.listen(PORT, function() {
   console.log("you are now listening on port: " + PORT);
 });
+console.log("--------------------------------");
+
+
+console.log(friendsArray);
